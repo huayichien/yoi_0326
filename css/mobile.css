@@ -72,13 +72,13 @@ main{
 
 #main_cut2{
   display: block;
-  height: 70vh;
+  height: 80vh;
   object-fit: cover;
 }
 
 #main_cut{
   display: none;
-  height: 70vh;
+  height: 80vh;
   object-fit: cover;
 }
 
