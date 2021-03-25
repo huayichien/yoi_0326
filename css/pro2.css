@@ -259,6 +259,14 @@ label{
 	line-height: 2em;
 }
 
+.minus:hover{
+	cursor: pointer;
+}
+
+.plus:hover{
+	cursor: pointer;
+}
+
 .number-spinner input{
 	width: 45%;
 	height: 3em;
