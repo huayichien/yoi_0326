@@ -78,7 +78,6 @@ main{
 
 #main_cut{
   display: none;
-  display: block;
   height: 70vh;
   object-fit: cover;
 }
