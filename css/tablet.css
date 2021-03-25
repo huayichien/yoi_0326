@@ -224,6 +224,7 @@ article{
 	display: flex;
 	grid-column: 1/3;
 	grid-row: 1/2;
+	z-index: 1;
 }
 
 #rice2_L{
@@ -245,6 +246,7 @@ article{
 	padding-top: 20px;
 	grid-column: 1/3;
 	grid-row: 1/2;
+	z-index: 0;
 }
 
 #rice2_txt h2{
@@ -335,6 +337,7 @@ article{
 	display: flex;
 	grid-column: 1/3;
 	grid-row: 1/2;
+	z-index: 1;
 }
 
 #water2_L{
@@ -356,6 +359,7 @@ article{
 	padding-top: 20px;
 	grid-column: 1/3;
 	grid-row: 1/2;
+	z-index: 0;
 }
 
 #water2_txt h2{
@@ -437,3 +441,4 @@ footer a:hover{
 .TB{background-position:-36px 0; }
 .IG{background-position:-72px 0; }
   
+}
