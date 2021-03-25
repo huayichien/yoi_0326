@@ -1,0 +1,238 @@
+@media (min-width:576px) and (max-width:1199px){
+
+.wrapper{
+	width: 100%;
+}
+/*=======================header=======================*/
+.menu-wrap{
+	display: none;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+	position: relative;
+	z-index: 888;
+}
+
+.logo{
+	display: block;
+	background-image: url(../icon/logo_mobile@2x.png);
+	width:62px;
+	height: 59px;
+}
+
+.sugi { /*=====球==========*/
+	width: 50vw;
+	height: 50vw;
+	background-image: url(../img/tama_test@2x.png);
+	background-repeat: no-repeat;
+  background-size: cover;
+	margin-bottom: 130px;	
+  margin-left: 70px;
+}
+
+header li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 50px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+
+/*====================主照+主選單=================*/
+
+main{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 5.5em;
+	grid-template-rows: 1fr;
+}
+
+.product_cut{  /* 背景圖 */
+	display: block;
+  width: 100%;
+	height: 100%;
+	object-fit: cover;
+	grid-column: 1/7;
+	grid-row: 1/2;
+	
+}
+
+nav{
+	position: fixed;
+	right: 0;
+	z-index: 888;
+	width: 5.5em;
+	height: 520px;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 20px 0 0 20px;
+	padding-top: 15px;
+	grid-column: 6/7;
+	grid-row: 1/2;
+}
+
+nav ul{
+
+}
+
+nav li a{
+	display: block;
+	width: 18px;
+	height: 90px;
+	margin: 30px 30px;
+	writing-mode: vertical-lr;
+	text-decoration: none;
+	font-size: 18px;
+	word-spacing: 3px;
+	color: black;
+	position: relative;
+	/*color:#39B44A;*/
+}
+
+nav li:nth-child(3) a{
+	color:#39B44A;
+}
+
+nav li a:before{
+	content: "●";
+	color:rgba(57,180,74,0);
+	position: absolute;
+}
+
+nav li a:hover:before{
+	color:rgba(57,180,74,1);
+	animation: ball .5s linear infinite;
+}
+
+@keyframes ball{
+
+	0%{top:-30px;}
+	100%{top:-20px;}
+}
+
+/* ============產品區================= */
+.Photo{
+	/* width: calc(100% - 5.5em); */
+	width: 100%;
+  padding-top: 100px;
+	padding-bottom: 100px;
+	margin-right: 50px;
+	position: relative;
+	grid-column: 1/6;
+	grid-row: 1/2;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(4,auto);
+}
+
+.Photo .bottle{  /* =====瓶===== */
+	display: block;
+	width: 80%;
+	object-fit: cover;
+	grid-column: 2/3;
+	grid-row: 1/2;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.Photo section{
+  position: relative;
+}
+
+section img{
+	display: block;
+	width: 100%;
+}
+
+section h1{
+	width: 100%;
+	text-align: center;
+  font-size: 1.8em;
+  color:white;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  z-index: 888;
+}
+
+section:nth-child(2){
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+section:nth-child(3){
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+section:nth-child(4){
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+section:nth-child(5){
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+section:nth-child(6){
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+section img:hover{
+	opacity: .3;
+}
+
+/*========================footer=====================*/
+
+footer{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 1.4em;
+	padding-left: 10px;
+}
+
+footer ul{
+	padding-right: 10px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+footer li a{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-image: url(../icon/socialmedia@2x.png);
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover@2x.png);
+}
+
+.TB{background-position:-36px 0; }
+.IG{background-position:-72px 0; }
+
+}
+

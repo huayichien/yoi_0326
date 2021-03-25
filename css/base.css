@@ -1,0 +1,11 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family:'Noto Serif JP', serif,Garamond;
+	line-height: 1.6;	
+}

@@ -1,0 +1,249 @@
+@import url('hamburger.css');
+@media (max-width:575px){
+
+	html,body{
+		line-height: 1.5;
+	}
+	
+  .wrapper{
+    width: 100%;
+  }
+
+  /*===================header==================*/
+ header{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	position: sticky;
+	left: 0;
+	top:0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+  z-index: 888;
+}
+
+.logo{
+  display: none;
+}
+
+.sugi{ /*=====球=======*/
+	width: 60vw;
+	height: 60vw;
+	background-image: url(../img/sugi@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 85px;
+	margin-left: 30px;
+}
+
+.sugi a{ 
+	display: none;
+}
+
+header li{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 25px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+
+/*===============主照+主選單=============*/
+main{
+  width: 100%;
+	background-color:rgba(0,0,0,.1);
+  overflow: hidden;
+}
+
+main img{
+  display: block;
+  height: 100vh;
+  object-fit: cover;
+}
+
+nav{
+	display: none;
+}
+
+/*=========會員區==========*/
+form{
+  width: 80%;
+  position: absolute; 
+  top:50%;
+  left: 50%;
+  transform: translate(-50% ,-40% ); 
+  border-radius: 5px;
+}
+
+form>a{
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  background-color: #9E0808;
+  text-align: center;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+form >a:hover{
+  background-color: black;
+}
+
+.sign{
+  background-color: white;
+  border-radius: 5px;
+}
+
+.sign p{
+  text-align:center;
+  font-size: 22px;
+  color: black; 
+  padding-top: 20px;
+}
+
+.sign label{
+  display: block;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-top: 20px;
+
+}
+
+.sign input{
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  width: 93%;
+  margin-left: 10px;
+  font-family:'Noto Serif JP', serif,Garamond;
+}
+
+.sign a{
+  display: block;
+  font-size: 16px;
+  text-align: right;
+  color: black;
+  text-decoration: none;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.sign a:hover{
+  color: #9E0808;
+}
+
+.sign button{
+  width: 95%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
+  font-family:'Noto Serif JP', serif;
+  color: white;
+  background-color: #9E0808;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+  margin: 20px 10px;
+}
+
+.sign button:hover{
+  background-color: black;
+}
+
+/* 忘記密碼 */ 
+#forget{
+	display: none;
+}
+
+.verify{
+	background-color:white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.verify label{
+	display: block;
+	font-size: 16px;
+	padding: 5px 10px;
+	margin-top: 20px;
+}
+
+.verify input{
+	display: block;
+	font-size: 16px;
+	height: 50px;
+	width: 93%;
+	margin-left: 10px;
+	font-family:'Noto Serif JP', serif,Garamond;
+}
+
+.verify button{
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	font-family:'Noto Serif JP', serif;
+	color: white;
+	background-color: #9E0808;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+	margin: 20px 10px;
+}
+
+.verify button:hover{
+	background-color: black;
+}
+
+/*=================footer=================*/
+
+footer{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 0.75em;
+  padding-left: 20px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+footer li a{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image: url(../icon/socialmedia.png);
+  background-size: cover;
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover.png);
+}
+
+.TB{background-position:-18px 0; }
+.IG{background-position:-36px 0; }
+
+
+}

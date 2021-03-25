@@ -1,0 +1,175 @@
+@media (min-width:1200px){
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*=====================header==================*/
+.menu-wrap {
+	display: none;
+}
+
+header{
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+	position: relative;
+	z-index: 888;
+}
+
+.logo{
+	display: block;
+	background-image: url(../icon/LOGO@2x.png);
+	width: 245px;
+	height: 80px;
+}
+
+.sugi { /*=====球==========*/
+	width: 500px;
+	height: 500px;
+	background-image: url(../img/tama_test@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 125px;	
+}
+
+header li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 50px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+	
+
+/*================主照+主選單===============*/
+
+main{
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1115px 85px;	
+	grid-template-rows: 1fr;
+}
+
+main img{
+  display: block;
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+
+nav{
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+nav ul{
+	width: 5.5em;
+	height: 525px;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 20px 0 0 20px;
+	padding-top: 30px;
+}
+
+nav li a{
+	display: block;
+	width: 18px;
+	height: 90px;
+	margin: 30px 30px;
+	writing-mode: vertical-lr;
+	text-decoration: none;
+	font-size: 18px;
+	word-spacing: 3px;
+	color: black;
+	position: relative;
+	
+	/*color:#39B44A;*/
+}
+
+nav li:nth-child(1) a{
+	color:#39B44A;
+}
+
+nav li a:before{
+	content: "●";
+	color:rgba(57,180,74,0);
+	position: absolute;
+}
+
+nav li a:hover:before{
+	color:rgba(57,180,74,1);
+	animation: ball .5s linear infinite;
+}
+
+@keyframes ball{
+
+	0%{top:-30px;}
+	100%{top:-20px;}
+}
+
+/*=============================文字區================================*/
+
+article{
+	text-align: center;
+	padding-top: 30px;
+}
+
+article h1{
+	font-size: 32px;
+}
+
+article .p1200{
+	font-size: 22px;
+	line-height: 36px;
+	color: rgba(0,0,0,.6);
+	padding-bottom: 20px;
+}
+
+article .ps{
+	display: none;
+}
+
+/*===============footer===================*/
+
+footer{
+	width: 1200px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	border-top:1px dotted gray;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 22px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+footer li a{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-image: url(../icon/socialmedia@2x.png);
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover@2x.png);
+}
+
+.TB{background-position:-36px 0; }
+.IG{background-position:-72px 0; }
+}
+

@@ -1,0 +1,278 @@
+@import url('hamburger.css');
+@media (max-width:575px){
+
+	html,body{
+		line-height: 1.5;
+	}
+	
+  .wrapper{
+    width: 100%;
+  }
+
+  /*===================header==================*/
+ header{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	position: sticky;
+	left: 0;
+	top:0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 888; 
+}
+
+.logo{
+  display: none;
+}
+
+.sugi{ /*=====球=======*/
+	width: 60vw;
+	height: 60vw;
+	background-image: url(../img/sugi@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 85px;
+	margin-left: 30px;
+}
+
+.sugi a{ 
+	display: none;
+}
+
+header li{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 25px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+
+/*===============主照+主選單=============*/
+main{
+  width: 100%;
+	background-color:rgba(0,0,0,.1);
+}
+
+nav{
+	display: none;
+}
+
+/* ==================產品區================ */
+.card{
+	width:90%;
+	margin: 0 auto;
+}
+
+.card img{
+	display: block;
+	height:100%;
+  object-fit: contain;
+	margin: 0 auto;
+}
+
+.card .container{
+  
+}
+
+.container h1{
+	font-size: 3em;
+}
+
+.container span{
+	font-size: 20px;
+	margin-bottom: 3px;
+	display: block;
+}
+
+.container p{
+	font-size: 1.2em;
+	line-height: 36px;
+	/* padding-top: 50px; */
+	padding-bottom: 50px;
+}
+
+table{
+	font-size: 22px;
+	line-height: 36px;
+}
+
+th{
+	width: 30%;
+	height: 50px;
+	text-align: left;	
+}
+
+td{
+	color: gray;
+}
+
+.link{
+	width:90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.Back,.number,.favorite,.Next{
+	display:inline-block;
+	width: 150px;
+	height: 45px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	line-height: 45px;
+	background-color: #9E0808;
+	color:white;
+	border-radius: 5px;
+}
+
+.Back:hover{
+	background-color: black;
+}
+
+.number:hover{
+	background-color: black;
+}
+
+.favorite:hover{
+	background-color: black;
+}
+
+.Next:hover{
+	background-color: black;
+}
+
+.number{order: 1;
+	margin-bottom: 15px;}
+.favorite{order: 2;
+	margin-bottom: 15px;}
+.Back{order: 3;}
+.Next{order: 4;}
+
+/* popup選擇數量 */
+.popup{
+	display: none;
+	background-color: rgba(0,0,0,.7);  
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+#buy{
+	background-color: white;
+	border-radius: 5px;
+	width: 96%;
+	box-shadow: 0 1em 20px rgb(0 0 0 / 5%);
+	padding: 1em 1.5em ;
+	position: absolute;
+	left:2%;
+  bottom: 2%;
+  z-index: 1;
+	text-align: center;
+}
+
+.quantity{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px 0;
+}
+
+label{
+	color: gray;
+}
+
+.select{
+	width: 60%;
+}
+
+.number-spinner{
+	display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+.minus,.plus{
+	width: 28%;
+  background-color: #555;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.number-spinner input{
+	width: 45%;
+	height: 3em;
+	text-align: center;
+	line-height: 3em;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn{
+	width: 35%;
+	margin-top:10px;
+	height: 3em;
+	font-family: 'Noto Serif JP';
+}
+
+/*=================footer=================*/
+
+footer{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 0.75em;
+  padding-left: 20px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+footer li a{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image: url(../icon/socialmedia.png);
+  background-size: cover;
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover.png);
+}
+
+.TB{background-position:-18px 0; }
+.IG{background-position:-36px 0; }
+
+}

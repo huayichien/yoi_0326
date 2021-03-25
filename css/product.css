@@ -1,0 +1,233 @@
+@media (min-width:1200px){
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*=======================header=======================*/
+.menu-wrap{
+	display: none;
+}
+
+header{
+	width: 1200px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+	position: relative;
+	z-index: 888;
+}
+
+.logo{
+	display: block;
+	background-image: url(../icon/LOGO@2x.png);
+	width:245px;
+	height: 80px;
+}
+
+.sugi { /*=====球==========*/
+	width: 500px;
+	height: 500px;
+	background-image: url(../img/tama_test@2x.png);
+	background-repeat: no-repeat;
+	margin-bottom: 120px;	
+}
+
+header li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 50px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+
+/*====================主照+主選單=================*/
+
+main{
+	width: 1200px;
+	display: grid;
+	grid-template-columns: 1115px 85px;
+	grid-template-rows: 1fr;
+}
+
+.product_cut{  /* 背景圖 */
+grid-column: 1/3;
+grid-row: 1/2;
+}
+
+nav{
+	grid-column: 2/3;
+	grid-row: 1/2;
+	/* position: fixed; */
+	/* right:calc((100% - 1200px) / 2); */
+	/* z-index: 888; */
+	width: 85px;
+	height: 520px;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 20px 0 0 20px;
+	margin-top: 215px;
+	padding-top: 15px;
+}
+
+nav ul{
+
+}
+
+nav li a{
+	display: block;
+	width: 18px;
+	height: 90px;
+	margin: 30px 30px;
+	writing-mode: vertical-lr;
+	text-decoration: none;
+	font-size: 18px;
+	word-spacing: 3px;
+	color: black;
+	position: relative;
+	/*color:#39B44A;*/
+}
+
+nav li:nth-child(3) a{
+	color:#39B44A;
+}
+
+nav li a:before{
+	content: "●";
+	color:rgba(57,180,74,0);
+	position: absolute;
+
+}
+
+nav li a:hover:before{
+	color:rgba(57,180,74,1);
+	animation: ball .5s linear infinite;
+}
+
+@keyframes ball{
+
+	0%{top:-30px;}
+	100%{top:-20px;}
+}
+
+/* ============產品區================= */
+.Photo{
+grid-column: 1/2;
+grid-row: 1/2;
+position: relative;
+}
+
+.Photo >img{     /* 瓶 */
+	display: block;
+	width: 220px;
+	position: absolute;
+	top: 150px;
+	left: 500px;
+}
+
+section{
+	width: 230px;
+	height: 230px;
+	position: relative;
+}
+
+section img{
+	display: block;
+	width: 230px;
+	height: 230px;
+	position:absolute;
+	z-index: 888;
+}
+
+section h1{
+	font-size: 30px;
+	font-weight: 900;
+	color: white;
+	width: 230px;
+	line-height: 230px;
+	text-align: center;
+	position: absolute;
+  	left:0;
+  	top: 0;
+}
+
+section:nth-child(2){
+	position: absolute;
+	top:375px;
+	left:80px;
+}
+
+section:nth-child(3){
+	position: absolute;
+	top:655px;
+	left:200px;
+}
+
+section:nth-child(4){
+	position: absolute;
+	top:755px;
+	left:470px;
+}
+
+section:nth-child(5){
+	position: absolute;
+	top:655px;
+	left:750px;
+}
+
+section:nth-child(6){
+	position: absolute;
+	top:375px;
+	right:30px;
+}
+
+section a{
+	z-index: 1;
+}
+
+section img:hover{
+	opacity: .3;
+}
+
+/*========================footer=====================*/
+
+footer{
+	width: 1200px;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 22px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+footer li a{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-image: url(../icon/socialmedia@2x.png);
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover@2x.png);
+}
+
+.TB{background-position:-36px 0; }
+.IG{background-position:-72px 0; }
+
+}

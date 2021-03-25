@@ -1,0 +1,176 @@
+@import url('hamburger.css');
+@media (max-width:575px){
+
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+ /*===================header==================*/
+header{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	position: sticky;
+	left: 0;
+	top:0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.logo{
+  display: none;
+}
+
+.sugi { /*=====球==========*/
+	display: block;
+	width: 60vw;
+  height: 60vw;
+	background-image: url(../img/sugi@2x.png);
+	background-repeat: no-repeat;
+  background-size: cover;
+	margin-bottom: 85px;
+  margin-left: 30px;
+}
+
+header li{
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 25px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+
+/*===============主照+主選單=============*/
+main{
+  width: 100%;
+	background-color:rgba(0,0,0,.1);
+	overflow: hidden;
+}
+
+nav{
+	display: none;
+}
+
+/*==================文章區=====================*/
+.txt{
+	width: 100%;
+}
+
+.txt img{
+	display: block;
+	width: 100%;
+}
+
+.txt h1{
+	font-size: 1.8em;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.txt p{
+	font-size: 0.75em;
+  line-height: 1.7em;
+	color: rgba(0,0,0,.6);
+	width: 85%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.map{
+	width: 100%;
+	display: flex;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+.map img{
+display: block;
+height: 30vh;
+object-fit: cover;
+}
+
+.map .add{
+	font-size: .75em;
+	line-height: 3.25em;
+	color: black;
+	width: 95%;
+	padding-left: 10px;
+}
+
+.add p:after{
+	content:"";
+	display: block;
+	border-bottom: 1px solid gray;
+}
+
+.link{
+	width: 100%;
+	background-color:rgba(0,0,0,.1);
+	padding: 10px;
+}
+
+.link a{
+	display: block;
+	width: 200px;
+	height: 40px;
+	margin: 0 auto;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #9E0808;
+	color:white;
+	border-radius: 5px;
+}
+
+.link a:hover{
+	background-color: black;
+}
+
+/*=================footer=================*/
+
+footer{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 0.75em;
+  padding-left: 20px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+footer li a{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background-image: url(../icon/socialmedia.png);
+  background-size: cover;
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover.png);
+}
+
+.TB{background-position:-18px 0; }
+.IG{background-position:-36px 0; }
+}

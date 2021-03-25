@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/pro2.css">
+	<link rel="stylesheet" href="css/pro2_m.css">
+	<link rel="stylesheet" href="css/pro2_s.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon-20210206034825620.png" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<title>醉好酒造株式會社</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<!------------------- header -------------------->
+
+		<header>
+
+			<a href="index.html" class="logo" title=""></a>
+			<div class="sugi">
+				<!-- =====球====== -->
+			</div>
+
+			<ul>
+				<li><a href="product_2.html"><span class="material-icons">shopping_cart</span></a></li>
+				<li><a href="member.html"><span class="material-icons">person</span></a></li>
+			</ul>
+
+			<div class="menu-wrap">
+				<!-- hamburger -->
+				<input type="checkbox" class="toggler">
+				<div class="hamburger">
+					<div></div>
+				</div>
+				<div class="menu">
+					<div>
+						<div>
+							<a href="index.html"><img src="./icon/ham_logo_bk@2x.png"></a>
+							<ul>
+								<li><a href="about.html">關於我們</a></li>
+								<li><a href="concept.html">釀造理念</a></li>
+								<li><a href="product.html">商品情報</a></li>
+								<li><a href="tour.html">酒造見學</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!---------------- 主照+主選單 ------------------->
+
+		<main>
+
+			<nav>
+				<ul>
+					<li><a href="about.html" title="">關於我們</a></li>
+					<li><a href="concept.html" title="">釀造理念</a></li>
+					<li><a href="product.html" title="">商品情報</a></li>
+					<li><a href="tour.html" title="">酒造見學</a></li>
+				</ul>
+			</nav>
+
+			<!------------------ 產品區 ---------------------->
+
+			<div class="card">
+				<img src="./img/product_2@2x.png" alt="">
+
+				<div class="container">
+					<h1><span>純米大吟釀</span>水芭蕉</h1>
+					<p>刻意將原酒儲存到隔年秋天，再直接裝瓶。比起原酒更能品嘗到深厚的旨味，非常適合搭配秋刀魚等秋季食材，一起享用。</p>
+
+					<table>
+						<tr>
+							<th>原料米</th>
+							<td>兵庫県三木市　三木・別所地區産 山田錦</td>
+						</tr>
+						<tr>
+							<th>精米歩合</th>
+							<td>35%</td>
+						</tr>
+						<tr>
+							<th>日本酒度</th>
+							<td>+1</td>
+						</tr>
+						<tr>
+							<th>酒精濃度</th>
+							<td>16％</td>
+						</tr>
+						<tr>
+							<th>保存方法</th>
+							<td>常温</td>
+						</tr>
+						<tr>
+							<th>價格</th>
+							<td> 1800ml&nbsp;&nbsp;&nbsp;&nbsp;12,000元<br>
+								720ml&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6,000元<br>
+								300ml&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,200元
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- popup選擇數量 -->
+			<div class="popup">
+				<form action="" id=buy>
+
+					<div class="quantity">
+						<label for="">1800ml</label>
+						<div class="select">
+							<div class="number-spinner">
+								<div class="minus"><span>-</span></div>
+								<input type="number" name="shipping" value="0" min="0" max="99">
+								<div class="plus"><span>+</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="quantity">
+						<label for="">720ml</label>
+						<div class="select">
+							<div class="number-spinner">
+								<div class="minus"><span>-</span></div>
+								<input type="number" name="shipping" value="0" min="0" max="99">
+								<div class="plus"><span>+</span></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="quantity">
+						<label for="">300ml</label>
+						<div class="select">
+							<div class="number-spinner">
+								<div class="minus"><span>-</span></div>
+								<input type="number" name="shipping" value="0" min="0" max="99">
+								<div class="plus"><span>+</span></div>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn">加入購物車</button>
+				</form>
+			</div>
+
+			<div class="link">
+				<a href="#" class="Back">Back</a>
+				<a href="#" class="number">選擇數量</a>
+				<a href="#" class="favorite">我的最愛</a>
+				<a href="#" class="Next">Next</a>
+			</div>
+
+		</main>
+
+		<!---------------- footer ------------------>
+
+		<footer>
+			<p>only for Tibame homework</p>
+			<ul>
+				<li><a href="#" class="FB"></a></li>
+				<li><a href="#" class="TB"></a></li>
+				<li><a href="#" class="IG"></a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<script>
+		document.getElementsByClassName("number")[0].onclick = A;
+		function A() {
+			document.getElementsByClassName("popup")[0].style.display = "block";
+		}
+
+		document.getElementsByClassName("btn")[0].onclick = B;
+		function B() {
+			document.getElementsByClassName("popup")[0].style.display = "none";
+		}
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+@media (min-width:576px) and (max-width:1199px){
+
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*======================header=======================*/
+.menu-wrap{
+display: none;
+}
+
+header{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items:  center;
+	position: relative;
+	z-index: 888;
+}
+
+.logo{
+	display: block;
+	background-image: url(../icon/logo_mobile@2x.png);
+	width: 62px;
+	height: 59px;
+}
+
+.sugi { /*=====球======*/
+	display: block;
+	width: 50vw;
+  height: 50vw;
+	background-image: url(../img/tama_test@2x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 140px;
+	transition: .2s;	
+  transform-origin: center;	
+	margin-left: 70px;
+}
+
+header li{
+	display: inline-block;
+	margin-left: 30px;
+}
+
+span.material-icons{
+	color: black;
+	font-size: 50px;
+}
+	
+span.material-icons:hover{
+	color: #39B44A;
+	text-decoration: none;
+}
+	
+/*=================主照+主選單===================*/
+
+main{
+	width: 100%;
+	background-color:rgba(0,0,0,.1);
+	position: relative;
+}
+
+nav{
+	width: 85px;
+	position: absolute;
+	right:0;
+}
+
+nav ul{
+	width: 85px;
+	height: 520px;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 20px 0 0 20px;
+	margin-top: 150px;
+	padding-top: 15px;
+}
+
+nav li a{
+	display: block;
+	width: 18px;
+	height: 90px;
+	margin: 30px 30px;
+	writing-mode: vertical-lr;
+	text-decoration: none;
+	font-size: 18px;
+	word-spacing: 3px;
+	color: black;
+	position: relative;
+	/*color:#39B44A;*/
+}
+
+nav li:nth-child(3) a{
+	color:#39B44A;
+}
+
+nav li a:before{
+	content: "●";
+	color:rgba(57,180,74,0);
+	position: absolute;
+}
+
+nav li a:hover:before{
+	color:rgba(57,180,74,1);
+	animation: ball .5s linear infinite;
+}
+
+@keyframes ball{
+	0%{top:-30px;}
+	100%{top:-20px;}
+}
+
+/* ==================產品區================ */
+.card{
+	width: calc(100% - (5.5em*2));
+	margin: 0 auto;
+	display: flex;
+	padding-top: 150px;
+}
+
+.card img{
+	display: block;
+	width:30%;
+  object-fit: contain;
+}
+
+.card .container{
+	padding-left: 50px;
+  width: 60%;
+}
+
+.container h1{
+	font-size: 60px;
+}
+
+.container span{
+	font-size: 20px;
+	margin-bottom: 3px;
+	display: block;
+}
+
+.container p{
+	font-size: 22px;
+	line-height: 36px;
+	/* padding-top: 50px; */
+	padding-bottom: 50px;
+}
+
+table{
+	font-size: 22px;
+	line-height: 36px;
+}
+
+th{
+	width: 150px;
+	height: 50px;
+	text-align: left;	
+}
+
+td{
+	color: gray;
+}
+
+.link{
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+  flex-wrap: wrap;
+	margin-left: 40%;
+  margin-right: 5.5em ;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.Back,.number,.favorite,.Next{
+	display:inline-block;
+	width: 200px;
+	height: 45px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	line-height: 45px;
+	background-color: #9E0808;
+	color:white;
+	border-radius: 5px;
+}
+
+.Back:hover{
+	background-color: black;
+}
+
+.number:hover{
+	background-color: black;
+}
+
+.favorite:hover{
+	background-color: black;
+}
+
+.Next:hover{
+	background-color: black;
+}
+
+.number{
+	order: 1;
+	margin-bottom: 15px;
+}
+.favorite{
+	order: 2;
+	margin-bottom: 15px;
+}
+.Back{order: 3;}
+.Next{order: 4;}
+
+/* popup選擇數量 */
+.popup{
+	display: none;
+	background-color: rgba(0,0,0,.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+#buy{
+	background-color: white;
+	border-radius: 5px;
+	width: 40%;
+	box-shadow: 0 1em 20px rgb(0 0 0 / 5%);
+	padding: 1em 1.5em ;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+	transform: translate(-50%,50%);
+  z-index: 1;
+	text-align: center;
+}
+
+.quantity{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ebebeb;
+	padding: 10px 0;
+}
+
+label{
+	color: gray;
+}
+
+.select{
+	width: 60%;
+}
+
+.number-spinner{
+	display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+.minus,.plus{
+	width: 28%;
+  background-color: #555;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+	line-height: 2em;
+}
+
+.number-spinner input{
+	width: 45%;
+	height: 3em;
+	text-align: center;
+	line-height: 3em;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn{
+	width: 35%;
+	margin-top:10px;
+	height: 3em;
+	font-family: 'Noto Serif JP';
+}
+
+/*=============================footer==============================*/
+
+footer{
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+
+footer p{
+	color: rgba(0,0,0,.3);
+	font-size: 22px;
+}
+
+footer li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+footer li a{
+	display: block;
+	width: 36px;
+	height: 36px;
+	background-image: url(../icon/socialmedia@2x.png);
+}
+
+footer a:hover{
+	background-image: url(../icon/socialmedia_hover@2x.png);
+}
+
+.TB{background-position:-36px 0; }
+.IG{background-position:-72px 0; }
+
+}
