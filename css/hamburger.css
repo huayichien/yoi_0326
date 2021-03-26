@@ -140,3 +140,7 @@
 .menu-wrap .menu > div > div > ul > li > a:hover {
   color:rgb(57, 180, 74);
 }
+
+.menu-wrap .menu > div > div > ul > li > a:visited {
+  color:black;
+}
