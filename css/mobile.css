@@ -130,7 +130,7 @@ article{
 
 #rice2_txt h2{
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   color: rgba(0,0,0,.6);
   padding-top: 30px;
   padding-bottom: 30px;
@@ -138,8 +138,8 @@ article{
 
 #rice2_txt p{
   text-align: center;
-  font-size: 0.75em;
-  line-height: 1.7em;
+  font-size: 1em;
+  line-height: 2em;
   color: rgba(0,0,0,.6);
   padding-bottom: 30px;
 }
@@ -182,7 +182,7 @@ article{
 
 #water2_txt h2{
 	text-align: center;
-	font-size: 1em;
+	font-size: 1.2em;
 	color: rgba(0,0,0,.6);
 	padding-top: 30px;
   padding-bottom: 30px;
@@ -190,8 +190,8 @@ article{
 
 #water2_txt p{
 	text-align: center;
-	font-size: 0.75em;
-	line-height: 1.7em;
+	font-size: 1em;
+	line-height: 2em;
 	color: rgba(0,0,0,.6);
   padding-bottom: 30px;
 }
