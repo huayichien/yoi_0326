@@ -134,14 +134,16 @@ article{
   color: rgba(0,0,0,.6);
   padding-top: 30px;
   padding-bottom: 30px;
+  font-weight: 900;
 }
 
 #rice2_txt p{
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 2em;
   color: rgba(0,0,0,.6);
   padding-bottom: 30px;
+  font-weight: 500;
 }
 
 .water{   /* ====富士山水1===== */

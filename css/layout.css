@@ -250,7 +250,7 @@ article{
 	text-align: center;
 	font-size: 22px;
 	line-height: 40px;
-	color: rgba(0,0,0,.6);
+	color: rgba(0,0,0,.5);
 }
 
 .rice2 .mouse{
@@ -265,6 +265,7 @@ article{
 }
 
 .mouse h4{
+	font-weight: 900;
 	font-size: 1.8em;
 	color: rgba(0,0,0,.3);
 	text-align: center;
@@ -293,7 +294,7 @@ article{
 
 .water_content h1{
 	writing-mode: vertical-rl;
-	font-size: 48px;
+	font-weight: 900;
 	color: white;
 	text-shadow: black  0px 0px  3px;
 	position: absolute;
@@ -363,7 +364,7 @@ article{
 	text-align: center;
 	font-size: 22px;
 	line-height: 40px;
-	color: rgba(0,0,0,.6);
+	color: rgba(0,0,0,.5);
 }
 
 .water2 .mouse{
