@@ -85,8 +85,8 @@ article h1{
 }
 
 article .ps{
-	font-size: .8em;
-  line-height: 1.7em;
+	font-size: 1em;
+  line-height: 1.6em;
 	color: rgba(0,0,0,.6);
 	padding-bottom: 20px;
 	width: 85%;
