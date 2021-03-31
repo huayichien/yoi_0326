@@ -139,8 +139,8 @@ article{
 
 #rice2_txt p{
   text-align: center;
-  font-size: 1.2em;
-  line-height: 2em;
+  font-size: 0.75em;
+  line-height: 1.5em;
   color: rgba(0,0,0,.6);
   padding-bottom: 30px;
   font-weight: 500;
@@ -192,8 +192,8 @@ article{
 
 #water2_txt p{
 	text-align: center;
-	font-size: 1em;
-	line-height: 2em;
+	font-size: 0.75em;
+	line-height: 1.5em;
 	color: rgba(0,0,0,.6);
   padding-bottom: 30px;
 }
