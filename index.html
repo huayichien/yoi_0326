@@ -59,8 +59,8 @@
 		<!----------- 主照+主選單 ---------------->
 		<main>
 			<div class="open">
-				<img src="img/main_cut2@2x.png" id="main_cut2" alt="">
-				<img src="img/main_cut@2x.png" id="main_cut" alt="">
+				<img src="img/main_cut2@2x.jpg" id="main_cut2" alt="">
+				<img src="img/main_cut@2x.jpg" id="main_cut" alt="">
 
 				<nav>
 					<ul>
@@ -140,8 +140,8 @@
 				<section class="water2" id="water2">
 
 					<div class="water2_ph">
-						<img src="img/water_L@2x.png" id="water2_L">
-						<img src="img/water_R@2x.png" id="water2_R">
+						<img src="img/water_L@2x.jpg" id="water2_L">
+						<img src="img/water-2.jpg" id="water2_R">
 					</div>
 
 					<div id="water2_txt">
@@ -197,6 +197,7 @@
 
 		document.getElementsByClassName("sugi")[0].onmouseleave = revert;
 		function revert() {
+			event.preventDefault();
 			document.getElementById("main_cut2").style.display = "block";
 			document.getElementById("main_cut").style.display = "none";
 		}
@@ -204,6 +205,7 @@
 		TweenMax.to('.mouse img', 1.5, {
 			y: 60,
 			repeat: -1,
+			// ease:Back.easeOut.config(2),
 		});
 
 		// 照片打開
