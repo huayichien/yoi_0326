@@ -193,7 +193,7 @@
 
 	.rice .mouse {
 		padding-top: 10px;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 		width: 100%;
 		grid-column: 1/3;
 	}
@@ -264,7 +264,8 @@
 	}
 
 	.rice2 .mouse {
-		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 30px;
 		width: 100%;
 		grid-column: 1/3;
 	}
@@ -314,7 +315,8 @@
 	}
 
 	.water .mouse {
-		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 30px;
 		width: 100%;
 		grid-column: 1/3;
 	}
@@ -380,7 +382,8 @@
 	}
 
 	.water2 .mouse {
-		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 30px;
 		width: 100%;
 		grid-column: 1/3;
 	}
